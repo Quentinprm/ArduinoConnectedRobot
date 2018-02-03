@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Creative - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../web/CSS/projet.css" type="text/css">
+
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Accueil</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#desc">Description</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#quad">Quadrillage</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#parcours">Envoie parcours</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Projet tutoré :</h1>
+                <h1>Robot connecté</h1>
+                <hr>
+                <a href="#desc" class="btn btn-primary btn-xl page-scroll">Description du projet</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="desc">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Description de notre projet tutoré :</h2>
+                    <hr class="light">
+                    <p class="text-faded">L’objectif du projet est la réalisation de robot piloté par internet via un navigateur (ou, à défaut, via un
+mobile/tablette). Basé sur châssis de grande série, équipé de divers capteurs (encodeurs, capteur
+directionnel de distance…), d’un microcontrôleur type Arduino ou mini PC type Raspberry Pi, d’une liaison
+sans fil wifi (ou autre avec base émetteur-récepteur fixe), relié à internet (ou un réseau local) via Wifi ou
+Ethernet depuis le robot ou depuis sa base, chaque robot aura son propre serveur embarqué ou distant
+permettant de le piloter en direct ou de lui apprendre un parcours qu’il saura répéter. Idéalement ce seront
+2 robots qui pourront être réalisés avec différents châssis et technologies afin de les confronter dans une
+sorte de mini concours. En application domotique, on imagine un robot qui se rend à la demande dans un
+endroit précis du bâtiment pour y réaliser une surveillance ou une activité. Le site web permettra d’envoyer
+des commandes de base (avance, tourne…), programmer un chemin (en mode apprentissage ou en
+indiquant les points de passage), surveiller l’état du robot, l’historique de ses déplacements… Ce projet
+s’appuiera sur le club étudiant bidouilleMaker disposant du matériel nécessaire et savoir-faire adéquate. 
+</p>
+                    <a href="http://www.arduino.org/" class="btn btn-default btn-xl">information arduino</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Quadrillage</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <section id="grille">
+            <div class="colonne">
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(0,4)">[0,4]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(0,3)">[0,3]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(0,2)">[0,2]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(0,1)">[0,1]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(0,0)">Départ</button>
+                </ul>
+            </div>
+            <div class="colonne">
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(1,4)">[1,4]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(1,3)">[1,3]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(1,2)">[1,2]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(1,1)">[1,1]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(1,0)">[1,0]</button>
+                </ul>
+            </div>
+            <div class="colonne">
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(2,4)">[2,4]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(2,3)">[2,3]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(2,2)">[2,2]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(2,1)">[2,1]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(2,0)">[2,0]</button>
+                </ul>
+            </div>
+            <div class="colonne">
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(3,4)">[3,4]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(3,3)">[3,3]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(3,2)">[3,2]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(3,1)">[3,1]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(3,0)">[3,0]</button>
+                </ul>
+            </div>
+            <div class="colonne">
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(4,4)">[4,4]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(4,3)">[4,3]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(4,2)">[4,2]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(4,1)">[4,1]</button>
+                </ul>
+                <ul>
+                    <button onclick="quad.fonctions.case.ajouterCase(4,0)">[4,0]</button>
+                </ul>
+            </div>
+            <div class="log">
+                            <button id="buttonValidation" class="buttonLog" onclick="quad.fonctions.app.save()">Valider parcours</button>
+
+                            <button id="buttonInitialisation" class="buttonLog" onclick="quad.fonctions.app.parcoursSimple()">Parcours basique [0,4][4,4][4,0]</button>
+
+                            <button id="buttonClear" class="buttonLog" onclick="quad.fonctions.app.nettoyageAffichage('Crea')">Clear parcours actuel</button>
+
+                            <button id="buttonClear" class="buttonLog" onclick="quad.fonctions.app.nettoyageAffichage('Trans')">Clear parcours transformé</button>
+
+                            <button id="refreshDB" class="buttonLog" onclick="quad.fonctions.app.refresh()">Refresh</button>
+                            <button id="viderDB" class="buttonLog" onclick="quad.fonctions.app.viderDB(alert)">Vider la base</button>
+                        </div>
+        </section>
+    </section>
+
+    <section class="bg-primary" id="parcours">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Envoie du parcours</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div id="parcoursCrea" class="affichage">
+            <h2>Parcours actuel :</h2>
+        </div>
+        <div id="parcoursTrans" class="affichage">
+            <h2>Parcours Transformé :</h2>
+        </div>
+        <div id="parcoursDB" class="affichage">
+            <h2>Liste des parcours :</h2>
+        </div>            
+    </section>
+            
+
+    <!-- Quadrillage -->
+    <script src="../web/JS/quadrillage.js"></script>
+
+    <!-- jQuery -->
+    
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>

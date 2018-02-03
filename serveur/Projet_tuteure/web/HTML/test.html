@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Projetapp</title>
+    <link rel="stylesheet" href="../CSS/test.css">
+</head>
+
+<body>
+
+
+    <section id="grille">
+        <div>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(0,4)">[0,4]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(0,3)">[0,3]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(0,2)">[0,2]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(0,1)">[0,1]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(0,0)">Départ</button>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(1,4)">[1,4]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(1,3)">[1,3]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(1,2)">[1,2]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(1,1)">[1,1]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(1,0)">[1,0]</button>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(2,4)">[2,4]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(2,3)">[2,3]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(2,2)">[2,2]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(2,1)">[2,1]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(2,0)">[2,0]</button>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(3,4)">[3,4]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(3,3)">[3,3]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(3,2)">[3,2]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(3,1)">[3,1]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(3,0)">[3,0]</button>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(4,4)">[4,4]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(4,3)">[4,3]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(4,2)">[4,2]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(4,1)">[4,1]</button>
+            </ul>
+            <ul>
+                <button onclick="quad.fonctions.case.ajouterCase(4,0)">[4,0]</button>
+            </ul>
+        </div>
+    </section>
+
+    <section id="affichage">
+        <div id="parcoursCrea" class="log"><h2>Parcours en cours de création</h2></div>
+        <div id="parcoursTrans" class="log"><h2>Parcours formaté</h2></div>
+        <div id="parcoursDB" class="log"><h2>Liste des parcours</h2></div>
+    </section>
+    <section id="boutonControle">
+        <div class="log">
+            <button id="buttonValidation" class="buttonLog" onclick="quad.fonctions.app.save()">Valider parcours</button>
+
+            <button id="buttonInitialisation" class="buttonLog" onclick="quad.fonctions.app.parcoursSimple()">Parcours basique [0,4][4,4][4,0]</button>
+
+            <button id="buttonClearCrea" class="buttonLog" onclick="quad.fonctions.app.nettoyageAffichage('Crea')">Vider Parcours Actuel</button>
+
+            <button id="buttonClearTrans" class="buttonLog" onclick="quad.fonctions.app.nettoyageAffichage('Trans')">Vider parcours transformé</button>
+
+            <button id="refreshDB" class="buttonLog" onclick="quad.fonctions.app.refresh()">Mettre à jour Affichage DB</button>
+            <button id="viderDB" class="buttonLog" onclick="quad.fonctions.app.viderDB(alert)">Vider la base</button>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="../JS/quadrillage.js"></script>
+</body>
+
+
+
+</html>
